@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GoHome } from "react-icons/go";
 function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -8,8 +9,9 @@ function Register() {
 
   return (
     <div style={{ maxWidth: "400px", margin: "50px auto", textAlign: "center" }}>
-      <Link to="/">
-        <button>Voltar</button>
+      <Link to="/" style={{ textDecoration: "none", }}>
+        <GoHome />
+        home
       </Link>
       <h1>Cadastro</h1>
       <form onSubmit={handleSubmit}>

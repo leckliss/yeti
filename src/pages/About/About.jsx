@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { GoHome } from "react-icons/go";
 function About() {
   return (
     <div>
-    <Link to="/">
-          <button>Voltar</button>
-        </Link>
-    <h1>About Page</h1>
+      <Link to="/" style={{ textDecoration: "none", }}>
+        <GoHome />
+        home
+      </Link>
+      <h1>About Page</h1>
     </div>
   );
 }
